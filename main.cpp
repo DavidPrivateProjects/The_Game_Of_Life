@@ -1,6 +1,4 @@
-#include <iostream>
 #include <C:\raylib\raylib\src\raylib.h>
-using namespace std;
 
 int main() 
 {

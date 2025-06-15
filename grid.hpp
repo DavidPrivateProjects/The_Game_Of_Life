@@ -14,4 +14,4 @@ class Grid
         int columns;
         int cellSize;
         std::vector<std::vector<int>> cells;
-}
+};

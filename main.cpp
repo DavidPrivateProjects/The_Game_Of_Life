@@ -11,7 +11,11 @@ int main()
 
     InitWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "Game of Life");
     SetTargetFPS(FPS);
-    Simulation(WINDOW_WIDTH, WINDOW_HEIGHT, CELL_SIZE);
+    Simulation simulation(WINDOW_WIDTH, WINDOW_HEIGHT, CELL_SIZE);
+    simulation.SetCellValue(3, 4, 1);
+    simulation.SetCellValue(3, 5, 1);
+    simulation.SetCellValue(4, 5, 1);
+    simulation.SetCellValue(2, 5, 1);
 
     // Simulation Loop
     while(WindowShouldClose() == false)
@@ -23,6 +27,7 @@ int main()
         // 3. Draw State
         BeginDrawing();
         ClearBackground(GREY);
+        simulation.Draw();
         EndDrawing();
     }
 

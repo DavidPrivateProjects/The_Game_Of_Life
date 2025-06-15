@@ -1,5 +1,6 @@
 #include <iostream>
 #include <C:\raylib\raylib\src\raylib.h>
+#include "grid.hpp"
 using namespace std;
 
 int main() 
@@ -8,9 +9,12 @@ int main()
     const int WINDOW_WIDTH = 1000; 
     Color GREY = {20, 20, 20, 255};
     int FPS = 24;
+    const int CELL_SIZE = 25;
 
     InitWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "Game of Life");
     SetTargetFPS(FPS);
+    Grid grid(WINDOW_WIDTH, WINDOW_HEIGHT, CELL_SIZE);
+    grid.SetValue(0, 0, 1);
 
     // Simulation Loop
     while(WindowShouldClose() == false)

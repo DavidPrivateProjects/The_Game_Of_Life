@@ -1,5 +1,6 @@
 #include <C:\raylib\raylib\src\raylib.h>
 #include "simulation.hpp"
+#include <iostream>
 
 int main() 
 {
@@ -16,6 +17,8 @@ int main()
     simulation.SetCellValue(3, 5, 1);
     simulation.SetCellValue(4, 5, 1);
     simulation.SetCellValue(2, 5, 1);
+
+    std::cout << simulation.CountLiveNeighbors(3, 4) << std::endl;
 
     // Simulation Loop
     while(WindowShouldClose() == false)

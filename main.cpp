@@ -1,4 +1,5 @@
 #include <C:\raylib\raylib\src\raylib.h>
+#include "simulation.hpp"
 
 int main() 
 {
@@ -10,6 +11,7 @@ int main()
 
     InitWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "Game of Life");
     SetTargetFPS(FPS);
+    Simulation(WINDOW_WIDTH, WINDOW_HEIGHT, CELL_SIZE);
 
     // Simulation Loop
     while(WindowShouldClose() == false)

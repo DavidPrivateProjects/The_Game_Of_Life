@@ -1,5 +1,5 @@
 #include "grid.hpp"
-#include <C:\raylib\raylib\src\raylib.h>
+#include <raylib.h>
 
 void Grid::Draw()
 {

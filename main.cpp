@@ -1,6 +1,3 @@
-
-// 50.45min
-
 #include <C:\raylib\raylib\src\raylib.h>
 #include "simulation.hpp"
 
